@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Batch 2 Lecture 73 Loop statements</title>
+</head>
+
+<body>
+    
+    <form onsubmit='anil(event)'>
+        <input type="text" name="name" placeholder="enter you number">
+        <input  type="number">
+        <input type="submit" value="submit">
+
+    </form>
+    <ul id="ull">
+
+    </ul>
+
+
+    <script>
+          anil=(e)=>{
+            e.preventDefault()
+          
+
+           let name = document.querySelector('input[name="name"]');
+           name = name.value;
+           console.log(name);
+
+           let number = document.querySelector('input[type="number"]');
+           number = number.value;
+           console.log(number);
+
+           for(i=1; i<=number ; i++){
+             console.log(`hello ${name}, how are you`);
+             ul.innerHTML += `<li>hello ${name}, how are you</li>`;
+           }
+        }
+    </script>
+    <script>
+        
+        let ul = document.getElementById('ull');
+        console.log(ul);
+        for (var i = 0; i < 5; i++) {
+            console.log(i)
+        }
+
+      //  let name = prompt("please enter your name");
+
+       // let noTimes = prompt("how many times do you want to greet ?");
+        noTimes =parseInt(noTimes) 
+        console.log(typeof noTimes); 
+
+        /*
+        
+        syntax 
+        for(expression 1; expression2 ; expression3){
+
+        }
+
+         */
+
+      //   for(let x= 1 ; x<=noTimes; x++){ //x++ is post increment operator
+           // console.log(`hello ${name} good morning`);
+
+         //   ul.innerHTML += `<li>hello ${name} good morning</li>`;
+
+       //  }
+
+    </script>
+</body>
+
+</html>
